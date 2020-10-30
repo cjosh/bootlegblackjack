@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootleg Blackjack</title>
+    <style lang="css">
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .stats-box {
+            max-width: 900px;
+            height: 500px;
+            border: 3px solid black;
+            padding: 10px;
+            margin: 0 auto;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .player-ui, .house-ui {
+            text-align: center;
+            position: relative;
+        }
+        .player-cards, .house-cards {
+            padding: 10px;
+            height: 100px;
+            width: 100%;
+        }
+        .player-cards:before {
+            content: 'You';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        .house-cards:before {
+            content: 'House';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        .player-cards {
+            margin-bottom: 20px;
+        }
+        .card {
+            width: 50px;
+            height: 100%;
+            border: 3px solid black;
+            border-radius: 10%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .card.card-type-1, .card.card-type-2 {
+            border: 3px solid red;
+            color: red;
+        }
+        .stats-box h1 {
+            font-size: 100px;
+        }
+        .stats-box p {
+            font-size: 32px;
+        }
+        button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script src="./dist/bundle.js"></script>
+</body>
+</html>
