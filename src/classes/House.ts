@@ -60,6 +60,5 @@ export default class House extends CardRenderer {
   }
   hit() {
     this.hand.drawCard(this.deck);
-    console.log('house new hand', [...this.hand.handValue]);
   }
 }
