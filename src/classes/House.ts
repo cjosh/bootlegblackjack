@@ -30,6 +30,9 @@ export default class House extends CardRenderer {
     let hasStayed = false;
     let hasBusted = false;
     let hasWon = false;
+    // Aces are automatically valued at 11 if the dealer's card count equals 17
+    // or higher. Aces are valued at 1 if count is 16 or less.
+    // https://www.instructables.com/How-to-Play-21Blackjack/
     while (!this.houseIsBusted() && !hasStayed && !hasBusted && !hasWon) {
       if (this.hand.handValue.some(v => v > 16)) {
         hasStayed = true;

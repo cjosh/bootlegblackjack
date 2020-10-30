@@ -4,5 +4,5 @@
 ### No wagering, 1 deck, no folding, play until deck is empty then refresh
 
 ## Running instructions
-npm install
-npm run start
+#### npm install
+#### npm run start
